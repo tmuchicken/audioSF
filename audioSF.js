@@ -144,7 +144,7 @@ function stopStream(stream) {
          source1.connect(panner1);
 
         //filterの作成
-        var biquadFilter = new context1.createBiquadFilter();
+        var biquadFilter = context1.createBiquadFilter();
         biquadFilter.type = 'highpass'; //ハイパスフィルター
         biquadFilter.frequency.value = 400; //Hz閾値
         //biquadFilter.gain.value = -50; //gainの強さ シェルフィルタの時のみ使用
